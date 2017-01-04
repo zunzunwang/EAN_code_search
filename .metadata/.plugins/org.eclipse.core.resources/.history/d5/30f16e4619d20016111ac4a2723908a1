@@ -6,8 +6,6 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 
 
@@ -18,7 +16,7 @@ public class EanLookUpImpl implements EanLookUp {
 		List<FutureTask<EanTask>> futureTasks = new ArrayList<FutureTask<EanTask>>();
 		
 		//create thread pool.
-		ExecutorService executorService = Executors.newFixedThreadPool(threadNum);
+		ExecutorService service = Executors.newFixedThreadPool(threadNum);
 		
 		//read txt file.
         try {
@@ -31,15 +29,15 @@ public class EanLookUpImpl implements EanLookUp {
                 BufferedReader bufferedReader = new BufferedReader(read);
                 String lineTxt = null;
                 while((lineTxt = bufferedReader.readLine()) != null){
-                	//System.out.println(lineTxt);
-                	EanTask tempTask = new EanTask(lineTxt);
-                	//create a task.
-                	FutureTask<EanTask> futureTask = new FutureTask<EanTask>(tempTask);
                 	//add task to thread pool.
-                	futureTasks.add(futureTask);
-                	executorService.submit(futureTask);
+                    //System.out.println(lineTxt);
+                	EanTask tempTask = new EanTask(lineTxt);
+                	
+                	//executor.execute(tempTask);
+                	//System.out.println("exist threads："+executor.getPoolSize()+"，wait task："+
+                    //executor.getQueue().size()+"，finish task："+executor.getCompletedTaskCount());
                 }
-                executorService.shutdown();
+                //executor.shutdown();
                 read.close();
                 }else{
                 	System.out.println("We can't find the file.");
@@ -50,6 +48,4 @@ public class EanLookUpImpl implements EanLookUp {
             }
 		return null;
 	}
-	
-	
 }

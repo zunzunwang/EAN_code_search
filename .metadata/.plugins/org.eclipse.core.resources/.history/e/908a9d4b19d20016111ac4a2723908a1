@@ -7,7 +7,7 @@ public class MainEanTest {
 		// TODO Auto-generated method stub		
 		EanLookUpImpl test = new EanLookUpImpl();
 		String filePath = "./resource/grocery.txt";
-		test.readFile(filePath,3);
+		test.readFile(filePath);
 	}
 
 }

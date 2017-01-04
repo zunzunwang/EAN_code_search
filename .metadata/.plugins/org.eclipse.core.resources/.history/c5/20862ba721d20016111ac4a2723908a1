@@ -38,6 +38,11 @@ public class EanLookUpImpl implements EanLookUp {
                 	//add task to thread pool.
                 	futureTasks.add(futureTask);
                 	executorService.submit(futureTask);
+                	
+                	
+                	//executor.execute(tempTask);
+                	//System.out.println("exist threads："+executor.getPoolSize()+"，wait task："+
+                    //executor.getQueue().size()+"，finish task："+executor.getCompletedTaskCount());
                 }
                 executorService.shutdown();
                 read.close();
@@ -50,6 +55,4 @@ public class EanLookUpImpl implements EanLookUp {
             }
 		return null;
 	}
-	
-	
 }

@@ -19,7 +19,7 @@ class EanTask implements Callable {
 		// TODO Auto-generated method stub
         System.out.println("Start look up task: "+taskName+".");
         try {
-            Thread.sleep(10);
+            Thread.currentThread().sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -248,3 +248,83 @@
 2017-01-04 00:10:22,492 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
 2017-01-04 00:10:22,494 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-01-04 00:10:22,494 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 01:43:30,354 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:43:30,354 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 01:43:30,356 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:43:30,356 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 01:47:40,366 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:47:40,367 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 01:47:40,368 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:47:40,368 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 01:49:35,640 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:49:35,640 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 01:49:35,641 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:49:35,641 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 01:51:00,387 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:51:00,388 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 01:51:00,390 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:51:00,390 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 01:52:18,574 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:52:18,575 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 01:52:18,579 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:52:18,579 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 01:52:31,646 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:52:31,646 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 01:52:31,647 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:52:31,648 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 01:55:16,817 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:55:16,818 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 01:55:16,818 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 01:55:16,818 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 02:00:09,159 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:00:09,161 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 02:00:09,164 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:00:09,164 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 02:00:24,622 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:00:24,622 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 02:00:24,624 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:00:24,624 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 02:00:56,087 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:00:56,087 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 02:00:56,088 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:00:56,089 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 02:01:08,053 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:01:08,053 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 02:01:08,054 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:01:08,054 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 02:01:16,736 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:01:16,737 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 02:01:16,738 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:01:16,738 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 02:08:44,173 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:08:44,175 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 02:08:44,176 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:08:44,176 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 02:08:58,815 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:08:58,815 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 02:08:58,816 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:08:58,817 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 02:12:24,409 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:12:24,410 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 02:12:24,411 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:12:24,412 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 02:13:51,828 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:13:51,829 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 02:13:51,830 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:13:51,830 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 02:17:00,734 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:17:00,735 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 02:17:00,736 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:17:00,737 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 02:18:22,861 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:18:22,862 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 02:18:22,866 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:18:22,866 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 02:57:11,066 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:57:11,069 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 02:57:11,071 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 02:57:11,071 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources
+2017-01-04 03:01:06,371 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 03:01:06,371 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/main/resources
+2017-01-04 03:01:06,373 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-04 03:01:06,373 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/zunzunwang/Documents/JAVA_Projet/EAN_code_search/testEAN/src/test/resources

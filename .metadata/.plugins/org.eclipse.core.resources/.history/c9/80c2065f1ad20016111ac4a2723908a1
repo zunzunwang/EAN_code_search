@@ -15,11 +15,11 @@ class EanTask implements Callable {
 		
 	};
 
-	public String call() throws Exception {
+	public Object call() throws Exception {
 		// TODO Auto-generated method stub
         System.out.println("Start look up task: "+taskName+".");
         try {
-            Thread.sleep(10);
+            Thread.currentThread().sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -18,7 +18,7 @@ public class EanLookUpImpl implements EanLookUp {
 		List<FutureTask<EanTask>> futureTasks = new ArrayList<FutureTask<EanTask>>();
 		
 		//create thread pool.
-		ExecutorService executorService = Executors.newFixedThreadPool(threadNum);
+		ExecutorService service = Executors.newFixedThreadPool(threadNum);
 		
 		//read txt file.
         try {
@@ -37,9 +37,13 @@ public class EanLookUpImpl implements EanLookUp {
                 	FutureTask<EanTask> futureTask = new FutureTask<EanTask>(tempTask);
                 	//add task to thread pool.
                 	futureTasks.add(futureTask);
-                	executorService.submit(futureTask);
+                	
+                	
+                	//executor.execute(tempTask);
+                	//System.out.println("exist threads："+executor.getPoolSize()+"，wait task："+
+                    //executor.getQueue().size()+"，finish task："+executor.getCompletedTaskCount());
                 }
-                executorService.shutdown();
+                //executor.shutdown();
                 read.close();
                 }else{
                 	System.out.println("We can't find the file.");
@@ -50,6 +54,4 @@ public class EanLookUpImpl implements EanLookUp {
             }
 		return null;
 	}
-	
-	
 }
