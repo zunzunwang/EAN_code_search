@@ -1,0 +1,11 @@
+package org.zzw.testEAN;
+
+public interface EanLookUp {
+	
+	/**
+	 * This method finds the information of the products by 
+	 * the name of the product.
+	 */
+	public String findInfo(String name);
+
+}

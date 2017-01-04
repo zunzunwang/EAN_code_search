@@ -1,0 +1,46 @@
+package org.zzw.testEAN;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+public class EanLookUpImpl implements EanLookUp {
+
+	public String readFile(String filePath) {
+		//create thread pool
+		ThreadPoolExecutor executor = new ThreadPoolExecutor(3, 3, 200, TimeUnit.MILLISECONDS,
+                new LinkedBlockingQueue<Runnable>());
+		//read txt file.
+        try {
+        	String encoding="GBK";
+            File fileTemp = new File(filePath);
+            //verify the file is existed.
+            if(fileTemp.isFile() && fileTemp.exists()){
+            	//consider the code format. 
+                InputStreamReader read = new InputStreamReader(new FileInputStream(fileTemp),encoding);
+                BufferedReader bufferedReader = new BufferedReader(read);
+                String lineTxt = null;
+                while((lineTxt = bufferedReader.readLine()) != null){
+                	//add task to thread pool.
+                    //System.out.println(lineTxt);
+                	EanTask tempTask = new EanTask(lineTxt);
+                	executor.execute(tempTask);
+                	//System.out.println("exist threads："+executor.getPoolSize()+"，wait task："+
+                    //executor.getQueue().size()+"，finish task："+executor.getCompletedTaskCount());
+                }
+                executor.shutdown();
+                read.close();
+                }else{
+                	System.out.println("We can't find the file.");
+                }
+            }catch (Exception e) {
+            	System.out.println("Reading errors");
+            	e.printStackTrace();
+            }
+		return null;
+	}
+}

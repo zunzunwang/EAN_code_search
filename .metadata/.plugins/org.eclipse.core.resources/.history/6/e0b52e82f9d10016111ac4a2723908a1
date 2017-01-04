@@ -1,0 +1,30 @@
+package org.zzw.testEAN;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+public class MainEanTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		EanLookUpImpl test = new EanLookUpImpl();
+//		String filePath = "./resource/grocery.txt";
+//		
+//		test.readFile(filePath);
+		
+		ThreadPoolExecutor executor = new ThreadPoolExecutor(5, 10, 200, TimeUnit.MILLISECONDS,
+                new LinkedBlockingQueue<Runnable>());
+         
+        for(int i=0;i<25;i++){
+            EanTask myTask = new EanTask(i);
+            executor.execute(myTask);
+            System.out.println("线程池中线程数目："+executor.getPoolSize()+"，队列中等待执行的任务数目："+
+            executor.getQueue().size()+"，已执行玩别的任务数目："+executor.getCompletedTaskCount());
+        }
+        executor.shutdown();
+	}
+
+}

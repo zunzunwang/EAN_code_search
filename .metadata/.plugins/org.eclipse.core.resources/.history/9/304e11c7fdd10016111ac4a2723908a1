@@ -1,0 +1,15 @@
+package org.zzw.testEAN;
+
+public class MainEanTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		EanLookUpImpl test = new EanLookUpImpl();
+//		String filePath = "./resource/grocery.txt";
+//		
+//		test.readFile(filePath);
+ 
+	}
+
+}

@@ -1,0 +1,26 @@
+package org.zzw.testEAN;
+
+import java.io.File;
+
+public class EanLookUpImpl implements EanLookUp {
+
+	public String findInfo(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String readFile(String file) {
+		// TODO Auto-generated method stub
+		File file = new File("D:\\Test.java");//Text文件
+		BufferedReader br = new BufferedReader(new FileReader(file));//构造一个BufferedReader类来读取文件
+		String s = null;
+		while((s = br.readLine())!=null){//使用readLine方法，一次读一行
+		System.out.println(s);
+		}
+		br.close();;
+		
+		return null;
+	}
+	
+
+}

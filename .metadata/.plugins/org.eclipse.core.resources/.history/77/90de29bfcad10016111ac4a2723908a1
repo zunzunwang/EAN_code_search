@@ -1,0 +1,11 @@
+package org.zzw.testEAN;
+
+public class EanLookUpImpl implements EanLookUp {
+
+	public String findInfo(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}
