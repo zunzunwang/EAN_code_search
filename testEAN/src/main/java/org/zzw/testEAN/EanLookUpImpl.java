@@ -4,8 +4,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
@@ -13,10 +13,8 @@ import java.util.concurrent.FutureTask;
 
 public class EanLookUpImpl implements EanLookUp {
 
-	public String readFile(String filePath, int threadNum) {
-		//create task list.
-		List<FutureTask<EanTask>> futureTasks = new ArrayList<FutureTask<EanTask>>();
-		
+	public String readFile(String filePath, int threadNum, List<FutureTask<EanTask>> futureTasks) {
+	
 		//create thread pool.
 		ExecutorService executorService = Executors.newFixedThreadPool(threadNum);
 		
@@ -49,6 +47,31 @@ public class EanLookUpImpl implements EanLookUp {
             	e.printStackTrace();
             }
 		return null;
+	}
+
+	public String getResult(List<FutureTask<EanTask>> futureTasks) {
+		// TODO Auto-generated method stub
+		String result = "";
+	    for (FutureTask<EanTask> futureTask : futureTasks){
+		     try {				
+                while (true) {
+                    if (futureTask.isDone() && !futureTask.isCancelled()) {
+                        //System.out.println("Future:" + future + ",Result:" + future.get());
+        				result+= futureTask.get();
+                        break;
+                    } else {
+                        Thread.sleep(1000);
+                    }
+                }
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (ExecutionException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return result;
 	}
 	
 	

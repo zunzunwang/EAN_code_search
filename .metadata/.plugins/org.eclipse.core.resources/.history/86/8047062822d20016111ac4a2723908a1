@@ -1,0 +1,14 @@
+package org.zzw.testEAN;
+
+import java.util.List;
+import java.util.concurrent.Future;
+
+public interface EanLookUp {	
+	/**
+	 * This method read the file txt.
+	 * @param filePath
+	 * @threadNum
+	 */
+	public String readFile(String filePath, int threadNum, List<Future<String>> fList );
+	
+}

@@ -1,5 +1,9 @@
 package org.zzw.testEAN;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.FutureTask;
+
 
 public class MainEanTest {
 
@@ -7,7 +11,11 @@ public class MainEanTest {
 		// TODO Auto-generated method stub		
 		EanLookUpImpl test = new EanLookUpImpl();
 		String filePath = "./resource/grocery.txt";
-		test.readFile(filePath,3);
+		//create task list.
+		List<FutureTask<EanTask>> futureTasks = new ArrayList<FutureTask<EanTask>>();
+		test.readFile(filePath,3,futureTasks);
+		String result = test.getResult(futureTasks);
+		System.out.println(result);
 	}
 
 }
