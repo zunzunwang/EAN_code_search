@@ -57,7 +57,7 @@ public class EanLookUpImpl implements EanLookUp {
                 while (true) {
                     if (futureTask.isDone() && !futureTask.isCancelled()) {
                         //System.out.println("Future:" + future + ",Result:" + future.get());
-        				result+= futureTask.get();
+        				result+= "\n"+futureTask.get();
                         break;
                     } else {
                         Thread.sleep(1000);

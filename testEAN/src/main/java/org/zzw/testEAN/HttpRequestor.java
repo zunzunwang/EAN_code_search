@@ -14,6 +14,8 @@ import java.net.URLConnection;
 import java.util.Iterator;
 import java.util.Map;
 
+import org.w3c.dom.Document;
+
 public class HttpRequestor {
     
     private String charset = "utf-8";

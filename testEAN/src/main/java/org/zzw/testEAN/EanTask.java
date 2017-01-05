@@ -1,7 +1,15 @@
 package org.zzw.testEAN;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.concurrent.Callable;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
 
 class EanTask implements Callable {
 	private String url;
@@ -22,17 +30,31 @@ class EanTask implements Callable {
 //            e.printStackTrace();
 //        }
 //        System.out.println("Finish task: "+taskName+".");
-//        return "aaa";
-		
 		taskName = taskName.replaceAll("\\d+"," ");
 		taskName = taskName.replaceAll(" +", " ");
 		taskName = taskName.replaceAll(" ", "+");
-		String result = "";
+		taskName = taskName.replaceAll("/", "%2F");
 		url = url.replace("productName", taskName);
-		//HttpRequestor httprequestor = new HttpRequestor();
-		//result = httprequestor.doGet(url);
-		System.out.println(url);
-		return result;
+//		HttpRequestor httprequestor = new HttpRequestor();
+//		String result = httprequestor.doGet(url);
+		//System.out.println(url);
+        SAXParserFactory factory = SAXParserFactory.newInstance();
+        try {
+            SAXParser parser = factory.newSAXParser();
+            SAXParserHandle handle = new SAXParserHandle();
+            parser.parse(url, handle);
+
+        } catch (ParserConfigurationException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (SAXException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+		return "";
 		
 	}
 }
