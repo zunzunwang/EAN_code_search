@@ -10,12 +10,11 @@ public class MainEanTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub		
 		EanLookUpImpl test = new EanLookUpImpl();
-		//String filePath = "./resource/grocery.txt";
-		String filePath = "./resource/grocery_test.txt";
+		String filePath = "./resource/grocery.txt";
 		//create task list.
 		List<FutureTask<EanTask>> futureTasks = new ArrayList<FutureTask<EanTask>>();
 		//we create 3 threads.
-		String url ="https://world.openfoodfacts.org/cgi/search.pl?search_terms=productName&search_simple=1&action=process&json=1";
+		String url ="";
 		test.readFile(filePath,3,futureTasks,url);
 		String result = test.getResult(futureTasks);
 		System.out.println(result);

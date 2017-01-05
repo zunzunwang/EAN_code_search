@@ -4,14 +4,16 @@ import java.io.IOException;
 import java.util.concurrent.Callable;
 
 class EanTask implements Callable {
-	private String url;
     private String taskName;
     private String taskEanCode;
      
-    public EanTask(String productName, String url) {
+    public EanTask(String productName) {
         this.taskName = productName;
-        this.url = url;
     }
+    
+	public String findInfo(String productName){
+		return productName;
+	};
 
 	public String call() throws Exception {
 		// TODO Auto-generated method stub
@@ -23,16 +25,10 @@ class EanTask implements Callable {
 //        }
 //        System.out.println("Finish task: "+taskName+".");
 //        return "aaa";
-		
-		taskName = taskName.replaceAll("\\d+"," ");
-		taskName = taskName.replaceAll(" +", " ");
-		taskName = taskName.replaceAll(" ", "+");
 		String result = "";
-		url = url.replace("productName", taskName);
-		//HttpRequestor httprequestor = new HttpRequestor();
-		//result = httprequestor.doGet(url);
-		System.out.println(url);
-		return result;
+		String url = ""+taskName;
+		HttpRequestor httprequestor = new HttpRequestor();
+		result = httprequestor.doGet(url);
 		
 	}
 }

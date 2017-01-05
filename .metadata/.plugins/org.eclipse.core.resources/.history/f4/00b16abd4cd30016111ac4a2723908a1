@@ -10,8 +10,7 @@ public class MainEanTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub		
 		EanLookUpImpl test = new EanLookUpImpl();
-		//String filePath = "./resource/grocery.txt";
-		String filePath = "./resource/grocery_test.txt";
+		String filePath = "./resource/grocery.txt";
 		//create task list.
 		List<FutureTask<EanTask>> futureTasks = new ArrayList<FutureTask<EanTask>>();
 		//we create 3 threads.

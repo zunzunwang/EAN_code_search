@@ -23,15 +23,10 @@ class EanTask implements Callable {
 //        }
 //        System.out.println("Finish task: "+taskName+".");
 //        return "aaa";
-		
-		taskName = taskName.replaceAll("\\d+"," ");
-		taskName = taskName.replaceAll(" +", " ");
-		taskName = taskName.replaceAll(" ", "+");
 		String result = "";
-		url = url.replace("productName", taskName);
-		//HttpRequestor httprequestor = new HttpRequestor();
-		//result = httprequestor.doGet(url);
-		System.out.println(url);
+		String url = ""+taskName;
+		HttpRequestor httprequestor = new HttpRequestor();
+		result = httprequestor.doGet(url);
 		return result;
 		
 	}

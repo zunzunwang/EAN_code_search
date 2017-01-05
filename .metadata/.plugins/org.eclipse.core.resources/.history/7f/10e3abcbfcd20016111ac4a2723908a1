@@ -29,9 +29,8 @@ class EanTask implements Callable {
 		taskName = taskName.replaceAll(" ", "+");
 		String result = "";
 		url = url.replace("productName", taskName);
-		//HttpRequestor httprequestor = new HttpRequestor();
-		//result = httprequestor.doGet(url);
-		System.out.println(url);
+		HttpRequestor httprequestor = new HttpRequestor();
+		result = httprequestor.doGet(url);
 		return result;
 		
 	}

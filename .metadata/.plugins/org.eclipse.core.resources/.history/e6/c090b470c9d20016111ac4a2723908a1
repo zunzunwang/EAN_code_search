@@ -13,7 +13,7 @@ import java.util.concurrent.FutureTask;
 
 public class EanLookUpImpl implements EanLookUp {
 
-	public String readFile(String filePath, int threadNum, List<FutureTask<EanTask>> futureTasks,String url) {
+	public String readFile(String filePath, int threadNum, List<FutureTask<EanTask>> futureTasks) {
 	
 		//create thread pool.
 		ExecutorService executorService = Executors.newFixedThreadPool(threadNum);
@@ -30,7 +30,7 @@ public class EanLookUpImpl implements EanLookUp {
                 String lineTxt = null;
                 while((lineTxt = bufferedReader.readLine()) != null){
                 	//System.out.println(lineTxt);
-                	EanTask tempTask = new EanTask(lineTxt,url);
+                	EanTask tempTask = new EanTask(lineTxt);
                 	//create a task.
                 	FutureTask<EanTask> futureTask = new FutureTask<EanTask>(tempTask);
                 	//add task to thread pool.

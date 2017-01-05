@@ -7,9 +7,7 @@ public interface EanLookUp {
 	/**
 	 * This method read the file txt.
 	 * @param filePath
-	 * @param threadNum
-	 * @param futureTasks
-	 * @param url
+	 * @threadNum
 	 */
 	public String readFile(String filePath, int threadNum, List<FutureTask<EanTask>> futureTasks,String url);
 	
