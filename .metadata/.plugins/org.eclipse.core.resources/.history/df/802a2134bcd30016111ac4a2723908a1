@@ -1,6 +1,7 @@
 package org.zzw.testEAN;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.concurrent.Callable;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -9,11 +10,13 @@ import javax.xml.parsers.SAXParserFactory;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
 class EanTask implements Callable {
 	private String url;
     private String taskName;
+    private String taskEanCode;
      
     public EanTask(String productName, String url) {
         this.taskName = productName;
@@ -27,6 +30,8 @@ class EanTask implements Callable {
 		tempTaskName = tempTaskName.replaceAll(" ", "+");
 		tempTaskName = tempTaskName.replaceAll("/", "%2F");
 		url = url.replace("productName", tempTaskName);
+//		HttpRequestor httprequestor = new HttpRequestor();
+//		String result = httprequestor.doGet(url);
 		//System.out.println(url);
         SAXParserFactory factory = SAXParserFactory.newInstance();
         try {

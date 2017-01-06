@@ -24,7 +24,7 @@ public class EanLookUpImpl implements EanLookUp {
         try {
         	String encoding="GBK";
             File fileTemp = new File(filePath);
-            //verify the file is existed or not.
+            //verify the file is existed.
             if(fileTemp.isFile() && fileTemp.exists()){
             	//consider the code format. 
                 InputStreamReader read = new InputStreamReader(new FileInputStream(fileTemp),encoding);

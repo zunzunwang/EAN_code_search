@@ -57,7 +57,6 @@ public class SAXParserHandle extends DefaultHandler {
                 	temp_barcode = attributes.getQName(i);
                 	temp_barcode_value = attributes.getValue(i);
                 	jsonObjArr.put(temp_barcode,temp_barcode_value);
-                	break;
                 }
             }
         }else if(!name.equals("products") && !name.equals("opt")){
