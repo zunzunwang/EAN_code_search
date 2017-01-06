@@ -22,7 +22,7 @@ class EanTask implements Callable {
 
 	public JSONObject call() throws Exception {
 		// TODO Auto-generated method stub
-		//treatement product name.
+		//traitement product name.
 		String tempTaskName = taskName.replaceAll("\\d+"," ");
 		tempTaskName = tempTaskName.replaceAll(" +", " ");
 		tempTaskName = tempTaskName.replaceAll(" ", "+");

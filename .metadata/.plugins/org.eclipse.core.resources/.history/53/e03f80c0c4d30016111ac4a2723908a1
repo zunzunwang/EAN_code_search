@@ -15,7 +15,7 @@ import org.json.JSONArray;
 
 public class EanLookUpImpl implements EanLookUp {
 
-	public void readFile(String filePath, int threadNum, List<FutureTask<EanTask>> futureTasks,String url) {
+	public String readFile(String filePath, int threadNum, List<FutureTask<EanTask>> futureTasks,String url) {
 	
 		//create thread pool.
 		ExecutorService executorService = Executors.newFixedThreadPool(threadNum);
@@ -48,6 +48,7 @@ public class EanLookUpImpl implements EanLookUp {
             	System.out.println("Reading errors");
             	e.printStackTrace();
             }
+		return null;
 	}
 
 	public JSONArray getResult(List<FutureTask<EanTask>> futureTasks) {

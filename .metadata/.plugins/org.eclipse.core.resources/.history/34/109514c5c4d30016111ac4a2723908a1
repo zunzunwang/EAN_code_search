@@ -13,7 +13,7 @@ public interface EanLookUp {
 	 * @param futureTasks: the thread pool we created.
 	 * @param url: the url we use for our restful service.
 	 */
-	public void readFile(String filePath, int threadNum, List<FutureTask<EanTask>> futureTasks,String url);
+	public String readFile(String filePath, int threadNum, List<FutureTask<EanTask>> futureTasks,String url);
 	
 	/**
 	 * This method get the result from thread pool.
