@@ -10,6 +10,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 
+import org.json.JSONArray;
+
 
 public class EanLookUpImpl implements EanLookUp {
 
@@ -49,15 +51,15 @@ public class EanLookUpImpl implements EanLookUp {
 		return null;
 	}
 
-	public String getResult(List<FutureTask<EanTask>> futureTasks) {
+	public JSONArray getResult(List<FutureTask<EanTask>> futureTasks) {
 		// TODO Auto-generated method stub
-		String result = "";
+		JSONArray result = new JSONArray();
 	    for (FutureTask<EanTask> futureTask : futureTasks){
 		     try {				
                 while (true) {
                     if (futureTask.isDone() && !futureTask.isCancelled()) {
                         //System.out.println("Future:" + future + ",Result:" + future.get());
-        				result+= "\n"+futureTask.get();
+                    	result.put(futureTask.get());
                         break;
                     } else {
                         Thread.sleep(1000);

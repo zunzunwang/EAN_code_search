@@ -194,3 +194,12 @@ Java Model Exception: Java Model Status [TestThread [in [Working copy] PrintList
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2017-01-04 23:03:13.900
 !MESSAGE Unknown JDT proposal type 'class org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal' ('@category'). Returning original proposal instead.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-01-05 18:08:49.440
+!MESSAGE The POM for org.json:json:jar:1.5-20090211 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-01-05 18:09:27.204
+!MESSAGE The POM for org.json:json:jar:1.5-20090211 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-01-05 18:09:27.275
+!MESSAGE The POM for org.json:json:jar:1.5-20090211 is missing, no dependency information available

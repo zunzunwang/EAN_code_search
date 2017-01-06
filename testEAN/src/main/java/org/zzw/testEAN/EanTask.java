@@ -8,6 +8,8 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
@@ -21,7 +23,7 @@ class EanTask implements Callable {
         this.url = url;
     }
 
-	public String call() throws Exception {
+	public JSONObject call() throws Exception {
 		// TODO Auto-generated method stub
 //        System.out.println("Start look up task: "+taskName+".");
 //        try {
@@ -30,11 +32,11 @@ class EanTask implements Callable {
 //            e.printStackTrace();
 //        }
 //        System.out.println("Finish task: "+taskName+".");
-		taskName = taskName.replaceAll("\\d+"," ");
-		taskName = taskName.replaceAll(" +", " ");
-		taskName = taskName.replaceAll(" ", "+");
-		taskName = taskName.replaceAll("/", "%2F");
-		url = url.replace("productName", taskName);
+		String tempTaskName = taskName.replaceAll("\\d+"," ");
+		tempTaskName = tempTaskName.replaceAll(" +", " ");
+		tempTaskName = tempTaskName.replaceAll(" ", "+");
+		tempTaskName = tempTaskName.replaceAll("/", "%2F");
+		url = url.replace("productName", tempTaskName);
 //		HttpRequestor httprequestor = new HttpRequestor();
 //		String result = httprequestor.doGet(url);
 		//System.out.println(url);
@@ -43,7 +45,10 @@ class EanTask implements Callable {
             SAXParser parser = factory.newSAXParser();
             SAXParserHandle handle = new SAXParserHandle();
             parser.parse(url, handle);
-
+            JSONObject jsonObj = new JSONObject();//create json objet.
+            JSONArray jsonArr = handle.getJsonArray();
+            jsonObj.put(taskName, jsonArr);
+    		return jsonObj;
         } catch (ParserConfigurationException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -54,7 +59,8 @@ class EanTask implements Callable {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-		return "";
+		return null;
+
 		
 	}
 }

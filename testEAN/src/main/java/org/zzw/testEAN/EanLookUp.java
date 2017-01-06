@@ -3,6 +3,8 @@ package org.zzw.testEAN;
 import java.util.List;
 import java.util.concurrent.FutureTask;
 
+import org.json.JSONArray;
+
 public interface EanLookUp {	
 	/**
 	 * This method read the file txt.
@@ -16,6 +18,6 @@ public interface EanLookUp {
 	/**
 	 * This method get the result.
 	 */
-	public String getResult(List<FutureTask<EanTask>> futureTasks);
+	public JSONArray getResult(List<FutureTask<EanTask>> futureTasks);
 	
 }
